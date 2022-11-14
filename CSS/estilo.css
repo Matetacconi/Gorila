@@ -1,0 +1,136 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilos de body*/
+body{
+    background-image: url(../IMG/ladrillos\ negros.jpg);
+}
+
+/*Estilos de header*/
+header{
+    display: none;
+    background-color: #F0D800;
+
+}
+
+/*Estilos de main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2{
+    margin: 15px;
+    color:whitesmoke;
+   /* box-shadow: 1px 1px 5px #F0D800;*/
+    text-shadow: 1px 1px 5px #F0D800 ;
+}
+
+/*Boton*/
+
+main a{
+    background-color: #F0D800;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #000000;
+    box-shadow: 1px 1px 5px whitesmoke;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0) ;
+}
+
+main img{
+    width: 80%;
+}
+
+main .burger{
+    display: none;
+}
+
+
+
+/*estilos de section*/
+section{
+    display: none;
+}
+
+/*estilos de footer*/
+ 
+footer {
+    margin: 30px;
+    text-align: center;
+    color: #F0D800;
+    text-shadow:black;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    Header{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header nav ul{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        gap: 1.3rem;
+        font-size: 1.1rem;}
+    main{
+        padding: 2rem;
+    }
+    main img{
+        width: 30%;
+    }
+        
+    main a{
+        background-color: #F0D800;
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: #000000;
+        box-shadow: 1px 1px 5px whitesmoke;
+        text-shadow: 1px 1px 5px rgb(0, 0, 0) ;
+    }
+
+    /*Estilos de section*/
+    section{
+        display: block;
+        display: flex;
+        background-color:#F0D800;
+        
+    }
+    section div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    section div img{
+        width: 10%;
+    }
+
+
+    main .burger{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        width: 70%;
+        gap: 10px;
+        padding: 3rem;
+    }
+    
+   
+
+    
+}
+  
